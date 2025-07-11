@@ -1,11 +1,22 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url("../fonts/BebasNeueRegular.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 .header {
   min-height: 100vh;
@@ -34,7 +45,7 @@ body {
   color: #fff;
   position: relative;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
-  /* min-height: 94px; */
+  height: 94px;
 }
 .logo-link {
   padding: 25px 50px;
@@ -71,9 +82,6 @@ body {
   color: inherit;
   margin-right: 50px;
 }
-.header-button {
-  height: 100%;
-}
 .button {
   padding: 25px 60px;
   font-size: 16px;
@@ -81,9 +89,40 @@ body {
   color: #fff;
   background-color: rgb(92, 142, 230);
   border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-shrink: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.navbar-button {
+  height: 100%;
+}
+.seporator {
+  width: 150px;
+  height: 2px;
+  background-color: rgb(92, 142, 230);
+}
+.header-content {
+  padding-top: 150px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.header-title {
+  max-width: 1080px;
+  font-family: "Bebas Neue Regular";
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 30px 0;
+}
+.header-text {
+  max-width: 720px;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 50px;
 }
