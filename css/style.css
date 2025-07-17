@@ -20,6 +20,7 @@ body {
 }
 .header {
   min-height: 100vh;
+  padding-top: 94px;
 }
 .header-image {
   background-image: url("../img/header-bg.jpeg");
@@ -43,11 +44,23 @@ body {
   align-items: center;
   /* background-color: #1b1b1b; */
   color: #fff;
-  position: relative;
+  position: fixed;
+  z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
   height: 94px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: background-color, 0.2s;
 }
-.logo-link {
+.navbar-light {
+  background-color: #fff;
+  color: rgb(41, 45, 51);
+}
+.navbar-light .header-logo-path {
+  fill: rgb(41, 45, 51);
+}
+.navbar-light .logo-link {
   padding: 25px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
@@ -149,4 +162,93 @@ body {
   line-height: 160%;
   letter-spacing: 0%;
   text-align: left;
+}
+/* ======================================================================= */
+.section-light {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.container {
+}
+.seporator {
+}
+.section-title {
+  color: rgb(41, 45, 51);
+  font-family: "Bebas Neue Regular";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.steps-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+}
+.steps-item {
+  max-width: 330px;
+}
+.steps-num {
+  color: rgb(92, 142, 230);
+  font-family: "Bebas Neue Regular";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.steps-num::after {
+  content: "";
+  height: 1px;
+  /* sep */
+  background-color: rgb(235, 235, 240);
+  width: 100%;
+  margin-left: 30px;
+}
+.steps-title {
+  color: rgb(41, 45, 51);
+  font-family: Noto Sans;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.steps-text {
+  /* p */
+  color: rgb(130, 138, 153);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.steps-link {
+  /* bold */
+  color: rgb(92, 142, 230);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.steps-link::before {
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: rgb(92, 142, 230);
+  margin-right: 20px;
 }
